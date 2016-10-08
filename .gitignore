@@ -1,0 +1,5 @@
+# Scala-IntelliJ files
+
+Scala/out/*
+Scala/.idea/*
+Scala/*.iml
