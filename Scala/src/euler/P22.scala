@@ -29,7 +29,7 @@ object P22 extends App {
     p22Inner(1, names)
   }
 
-  val path = "/Users/Tim/Dropbox/Development/Sandbox/p22_names.txt"
+  val path = "p22_names.txt"
 
   println(p22(getNamesFromFile(path)))
 
