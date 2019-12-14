@@ -4,6 +4,7 @@ import java.math.MathContext
 
 object P26 extends App {
 
+  @scala.annotation.tailrec
   def getLongestReciprocalCycle(currentD: Int, end: Int, maxCycleLength: Int, maxD: Int): Int = {
     if (currentD > end)
       return maxD
@@ -40,6 +41,7 @@ object P26 extends App {
     return 0
   }
 
+  @scala.annotation.tailrec
   def doesRepeat(test: String, value: String, length: Int, count: Int): Boolean = {
     if (value.isEmpty)
       return true
