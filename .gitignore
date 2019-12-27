@@ -3,3 +3,8 @@
 Scala/out/*
 Scala/.idea/*
 Scala/*.iml
+
+# C++ files
+
+C++/*
+!C++/*.cpp
