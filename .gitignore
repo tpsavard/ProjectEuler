@@ -1,10 +1,11 @@
-# Scala-IntelliJ files
-
+# Scala-IntelliJ
 Scala/out/*
 Scala/.idea/*
 Scala/*.iml
 
-# C++ files
-
+# C++
 C++/*
 !C++/*.cpp
+
+# macOS
+*.DS_Store
