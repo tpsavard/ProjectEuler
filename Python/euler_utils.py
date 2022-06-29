@@ -17,18 +17,6 @@ def getNumber(digits):
         val += digit
     return val
 
-# Rotate the digits of a number "clockwise" one place value;
-# Obtain all rotations by calling repeatedly, until the original value is repeated
-# Ex.: 1234 -> 4123 -> 3412 -> 2341 -> 1234
-def rotateNumberClockwise(val):
-    digits = getDigitsDescendingOrder(val)
-    new_order = []
-    index = len(digits) - 1
-    for _ in range(0, len(digits)):
-        new_order.append(digits[index % len(digits)])
-        index += 1
-    return getNumber(new_order)
-
 # Returns whether the given number is a prime or not
 # Ex.: 2 -> False, 3 -> True
 def isPrime(val):
