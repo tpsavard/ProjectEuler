@@ -11,7 +11,7 @@ object P25 extends App {
       if (z.toString.length < threshold) {
         p25NaiveInner(y, z, i + 1)
       }
-      else println(i + ", " + z)
+      else println("" + i + ", " + z)
     }
     p25NaiveInner(0, 1, 2)
   }
@@ -30,7 +30,7 @@ object P25 extends App {
   def fastFib(n: BigInt) = {
     def fastFibInner(x: Array[Array[BigInt]], m: BigInt): Array[Array[BigInt]] = {
       if (m == 0) {
-        Array(Array(1, 0), Array(0, 1))
+        Array(Array(BigInt(1), BigInt(0)), Array(0, 1))
       } else if (m == 1) {
         x
       } else if (m % 2 == 0) {
